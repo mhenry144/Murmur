@@ -1,7 +1,16 @@
 * {
   margin: 0;
 }
-/* keep aspect ratio non-stretched */
+
+.app {
+  background-color: #fafafa;
+  height: 100vh;
+}
+
 .app__headerImage {
+  background-color: white;
+  padding: 20px;
+  border-bottom: 1px solid lightgrey;
+  /* keep aspect ratio non-stretched */
   object-fit: contain;
 }
