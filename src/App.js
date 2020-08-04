@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Post from './components/js/Post.js';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
     
     
     
-
+    <Post />
     {/* POST */}
     {/* POST */}
     {/* POST */}
