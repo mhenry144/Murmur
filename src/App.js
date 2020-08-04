@@ -18,6 +18,8 @@ function App() {
     
     
     <Post />
+    <Post />
+    <Post />
     {/* POST */}
     {/* POST */}
     {/* POST */}
