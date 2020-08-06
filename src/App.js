@@ -73,6 +73,8 @@ function App() {
     });
   }, []);
 
+  // SIGN UP
+  
   const signUp = (event) => {
     event.preventDefault();
 
@@ -86,8 +88,15 @@ function App() {
       .catch((error) => alert(error.message));
   };
 
+  // SIGN IN
+  
   const signIn = (event) => {
     event.preventDefault();
+
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .catch((error) => alert(error.message));
+    setOpenSignIn(false);
   };
 
   return (
