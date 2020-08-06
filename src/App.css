@@ -14,3 +14,10 @@
   /* keep aspect ratio non-stretched */
   object-fit: contain;
 }
+
+
+.app_signup {
+  display: flex;
+  /* Lines up input fields */
+  flex-direction: column;
+}
