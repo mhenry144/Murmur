@@ -19,6 +19,9 @@
 }
 
 .app__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: white;
   padding: 20px;
   border-bottom: 1px solid lightgrey;
@@ -37,6 +40,8 @@
 
 .app__headerImage {
   max-width: 150px;
+  max-height: 150px;
+  
   object-fit: contain;
 
 }

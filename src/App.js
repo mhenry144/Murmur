@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { Button, Input } from "@material-ui/core";
 import ImageUpload from "./components/js/ImageUpload";
-import logo from "./logo.png";
+import logo from "./murmur_logo.png";
 import InstagramEmbed from "react-instagram-embed";
 
 function getModalStyle() {
@@ -168,7 +168,7 @@ function App() {
 
       {/* Header */}
       <div className="app__header">
-        <img className="app__headerImage" src={logo} alt="123" />
+        <img className="app__headerImage" src={logo} alt="Logo" />
         {user ? (
           <Button onClick={() => auth.signOut()}>Logout</Button>
         ) : (
@@ -193,20 +193,7 @@ function App() {
             />
           ))}
         </div>
-        <div className="app__postsRight">
-          <InstagramEmbed
-            url="https://instagr.am/p/Zw9o4/"
-            maxWidth={320}
-            hideCaption={false}
-            containerTagName="div"
-            protocol=""
-            injectScript
-            onLoading={() => {}}
-            onSuccess={() => {}}
-            onAfterRender={() => {}}
-            onFailure={() => {}}
-          />
-        </div>
+        
       </div>
 
       {user?.displayName ? (
