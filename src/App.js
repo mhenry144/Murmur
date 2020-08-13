@@ -5,6 +5,7 @@ import { db, auth } from "./firebase.js";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { Button, Input } from "@material-ui/core";
+import ImageUpload from "./components/js/ImageUpload";
 
 function getModalStyle() {
   const top = 50;
@@ -62,19 +63,21 @@ function App() {
   // useEffect runs piece of code based on specific condition
   useEffect(() => {
     // listener, every time a post occurs, this code runs
-    db.collection("posts").onSnapshot((snapshot) => {
-      // loop through all documents to find a specific doc
-      setPosts(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          post: doc.data(),
-        }))
-      );
-    });
+    db.collection("posts")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) => {
+        // loop through all documents to find a specific doc
+        setPosts(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            post: doc.data(),
+          }))
+        );
+      });
   }, []);
 
   // SIGN UP
-  
+
   const signUp = (event) => {
     event.preventDefault();
 
@@ -89,7 +92,7 @@ function App() {
   };
 
   // SIGN IN
-  
+
   const signIn = (event) => {
     event.preventDefault();
 
@@ -101,6 +104,12 @@ function App() {
 
   return (
     <div className="app">
+      {user?.displayName ? (
+        <ImageUpload username={user.displayName} />
+      ) : (
+        <h3>Sorry you need to login to upload</h3>
+      )}
+
       <Modal
         open={open}
         //looks for clicks outside of the modal
