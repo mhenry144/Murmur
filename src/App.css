@@ -3,8 +3,7 @@
 }
 
 .app {
-  background-color: #fafafa;
-  
+  background-color: rgb(80, 79, 79);
 }
 
 .app__postsRight {
@@ -15,22 +14,20 @@
   padding: 20px;
   display: flex;
   justify-content: center;
-  
 }
-
+/* rgb(38, 40, 43) */
 .app__header {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: white;
+  background-color: rgb(38, 40, 43);
   padding: 20px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid black;
   /* keep aspect ratio non-stretched */
   object-fit: contain;
   display: flex;
   justify-content: space-between;
 }
-
 
 .app_signup {
   display: flex;
@@ -39,14 +36,9 @@
 }
 
 .app__headerImage {
-  
-  
   margin: -300px;
   margin-left: -40px;
   padding-top: 5px;
-  
-  
-  
-  object-fit: contain;
 
+  object-fit: contain;
 }
