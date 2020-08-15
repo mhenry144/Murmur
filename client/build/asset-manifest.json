@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.393c9324.chunk.css",
+    "main.js": "/static/js/main.947dd91d.chunk.js",
+    "main.js.map": "/static/js/main.947dd91d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9d7701dd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9d7701dd.js.map",
+    "static/js/2.666bab02.chunk.js": "/static/js/2.666bab02.chunk.js",
+    "static/js/2.666bab02.chunk.js.map": "/static/js/2.666bab02.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0df66d707279b7612ced13a10a3191a8.js": "/precache-manifest.0df66d707279b7612ced13a10a3191a8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.393c9324.chunk.css.map": "/static/css/main.393c9324.chunk.css.map",
+    "static/js/2.666bab02.chunk.js.LICENSE.txt": "/static/js/2.666bab02.chunk.js.LICENSE.txt",
+    "static/media/murmur_logo.png": "/static/media/murmur_logo.45daa029.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d7701dd.js",
+    "static/js/2.666bab02.chunk.js",
+    "static/css/main.393c9324.chunk.css",
+    "static/js/main.947dd91d.chunk.js"
+  ]
+}
