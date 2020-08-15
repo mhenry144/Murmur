@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(bodyParser.json());
 
-var mongoConfig = process.env.MONGODB_URI || "mongodb://localhost/workoutDB";
+var mongoConfig = process.env.MONGODB_URI || "mongodb://localhost/";
 mongoose.connect(
   mongoConfig,
   {
