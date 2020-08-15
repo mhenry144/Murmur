@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import "./App.css";
 import Post from "./components/js/Post.js";
 
+getResponse = async() => {
+  const response = await fetch('/api/hello');
+  const body = await response.json();
+  if (response.status !== 200) throw Error(body.message);
+}
+
 function App() {
   const [posts, setPosts] = useState([
     {
