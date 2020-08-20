@@ -3,6 +3,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require("path");
 const app = express();
+let graphqlHTTP = require("express-graphql");
+let { buildSchema } = require("graphql");
+let cors = require("cors");
 let PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -39,3 +42,22 @@ mongoose.connect(
 app.listen(PORT, function () {
   console.log("Express server started at port: http://localhost:" + PORT);
 });
+
+let schema = buildSchema(`
+      type User {
+        id : String!
+        nickname : String!
+        avatar : String!
+      }
+      type Post {
+          id: String!
+          user: User!
+          caption : String!
+          image : String!
+      }
+      type Query{
+        user(id: String) : User!
+        post(user_id: String, post_id: String) : Post!
+        posts(user_id: String) : [Post]
+      }
+    `);
