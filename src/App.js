@@ -170,13 +170,13 @@ function App() {
       <div className="app__header">
         <img className="app__headerImage" src={logo} alt="Logo" />
         {user ? (
-          <Button onClick={() => auth.signOut()}>Logout</Button>
+      <div className="logOut__button"><Button onClick={() => auth.signOut()}>Logout</Button></div>
         ) : (
           <div className="app__loginContainer">
             <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>
             <Button onClick={() => setOpen(true)}>Sign Up</Button>
           </div>
-        )}
+        ) }         
       </div>
 
       {/* POSTS */}

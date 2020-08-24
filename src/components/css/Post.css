@@ -1,5 +1,5 @@
 .post {
-  background-color: rgba(226, 226, 226, 0.507);
+  background-color: rgba(136, 136, 136, 0.507);
   max-width: 500px;
   border: 1px solid black;
   margin-bottom: 45px;
@@ -38,7 +38,7 @@
   border: none;
   padding: 10px;
   border-top: 1px solid black;
-  background-color: gray;
+  background-color:  rgb(63, 63, 63);
 }
 
 .post__input ::placeholder {
@@ -50,8 +50,8 @@
   /* take up as least room as possible */
   flex: 0;
   border: none;
-  color: #6082a3;
-  background: transparent;
+  color: #000000;
+  background: rgb(70, 69, 69);
   border-top: 1px solid black;
 }
 

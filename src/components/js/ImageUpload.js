@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button } from "@material-ui/core";
+// import { Button } from "@material-ui/core";
+import { Button } from "reactstrap";
 import { storage, db } from "../../firebase.js";
 import firebase from "firebase";
 import "../css/imageupload.css";
@@ -70,7 +71,9 @@ function ImageUpload({ username }) {
         value={caption}
       />
       <input className="image__file"type="file" onChange={handleChange} />
+      <div className="imageFile__button">
       <Button onClick={handleUpload}>Upload</Button>
+      </div>
     </div>
   );
 }

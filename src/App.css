@@ -3,7 +3,7 @@
 }
 
 .app {
-  background-color: rgb(80, 79, 79);
+  background-color:rgb(36, 36, 36);
 }
 
 .app__postsRight {
@@ -39,6 +39,14 @@
   margin: -300px;
   margin-left: -40px;
   padding-top: 5px;
-
+  
   object-fit: contain;
+}
+
+.app__loginContainer {
+  background-color: rgb(144, 164, 255);
+}
+
+.logOut__button {
+  background-color: rgb(144, 164, 255);
 }
