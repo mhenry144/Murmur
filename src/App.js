@@ -9,6 +9,7 @@ import ImageUpload from "./components/js/ImageUpload";
 import logo from "./murmur_logo.png";
 import InstagramEmbed from "react-instagram-embed";
 
+// center modal with transition on material ui and make it responsive
 function getModalStyle() {
   const top = 50;
   const left = 50;
@@ -19,7 +20,7 @@ function getModalStyle() {
     transform: `translate(-${top}%, -${left}%)`,
   };
 }
-
+// A function generating the styles 
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
@@ -64,7 +65,7 @@ function App() {
 
   // useEffect runs piece of code based on specific condition
   useEffect(() => {
-    // listener, every time a post occurs, this code runs
+    // indefinite listener, every time a post occurs, this code runs
     db.collection("posts")
       .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) => {
@@ -106,6 +107,7 @@ function App() {
 
   return (
     <div className="app">
+      {/* Modal containing username, email, password sign-up */}
       <Modal
         open={open}
         //looks for clicks outside of the modal
