@@ -107,7 +107,7 @@ function App() {
 
   return (
     <div className="app">
-      // Modal containing username, email, password sign-up
+      {/* Modal containing username, email, password sign-up */}
       <Modal
         open={open}
         //looks for clicks outside of the modal
