@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Group-Project Murmur
 
-## Available Scripts
+[![Generic Badge](https://img.shields.io/badge/VERSION-1.1.0-BLUE.svg)](https://shields.io/)
 
-In the project directory, you can run:
+[Repo: Murmur Application](https://github.com/itsTadae/Murmur)
 
-### `yarn start`
+[Deployed Site: Murmur]()
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This application was designed to be a streamed down photo application for novice users.
 
-### `yarn test`
+It allows a user to post their photos and comments on others.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A user can post their own photos or comment on thers.
 
-### `yarn build`
+## User Story
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As a USER.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+I WANT to be able post my photos and provide comments.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+SO THAT I can share my photos with family and friends and view theirs as well. 
 
-### `yarn eject`
+## Development
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+We have designed the backend application using React and Firebase. For the front end we used JavaScript, JQuery and Material UI for our styling. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Future Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+AS a USER.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+I WANT to be able to delete previous comments.
 
-## Learn More
+SO THAT I can edit my feedback on photos.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+AS a USER.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I WANT TO a profile page.
 
-### Code Splitting
+SO THAT I view previous posts.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+AS a USER
 
-### Analyzing the Bundle Size
+I WNAT TO change my username color and sytling
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+SO THAT it stands out
 
-### Making a Progressive Web App
+## Contact Information
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+* Name: Matt Henry 
+* Github: [itsTadae](https://github.com/itsTadae)
+* Email: matt.henry144@gmail.com
 
-### Advanced Configuration
+* Name: Dilshan Opatha
+* Github: [dopatha2020](https://github.com/dopatha2020)
+* Email: dopatha@nc.rr.com
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+* Name: Thomas O'Connell
+* Github: [tomay91](https://github.com/tomay91)
+* Email: tomay91@gmail.com
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Name: Atticus J Sessoms
+* Github: [AttiFatty](https://github.com/AttiFatty)
+* Email: atticus@tableasheville.com
