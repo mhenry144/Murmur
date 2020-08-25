@@ -7,7 +7,7 @@ import Modal from "@material-ui/core/Modal";
 import { Button, Input } from "@material-ui/core";
 import ImageUpload from "./components/js/ImageUpload";
 import logo from "./murmur_logo.png";
-import InstagramEmbed from "react-instagram-embed";
+
 
 // center modal with transition on material ui and make it responsive
 function getModalStyle() {
